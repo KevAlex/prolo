@@ -21,3 +21,4 @@ casado(A,B) :- hijode(C,A), hijode(C,B), A \== B.
 nietode(A,B) :- padrede(B,C), padrede(C,A).
 
 
+feliz(A) :- not(casado(A,B)), A \== B.
