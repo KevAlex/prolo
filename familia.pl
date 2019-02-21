@@ -17,6 +17,9 @@ hermanode(A,B) :-padrede(C,A), padrede(C,B), A \== B.
 familiarde(A,B) :- padrede(A,B).
 familiarde(A,B) :- abuelode(A,B).
 familiarde(A,B) :- hermanode(A,B).
+familiarde(A,B) :- cousin(A,B).
+familiarde(A,B) :-nietode(A,B). 
+familiarde(A,B) :-tiode(A,B):
 casado(A,B) :- hijode(C,A), hijode(C,B), A \== B.
 nietode(A,B) :- padrede(B,C), padrede(C,A).
 
